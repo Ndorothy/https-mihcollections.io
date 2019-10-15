@@ -1,0 +1,8 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTP_HOST} ^cloth\.etechgarage\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cloth\.etechgarage\.com$
+RewriteRule ^\ \(\/home\/etechgarage\)\/cloth\.etechgarage\.com\/?(.*)$ "https\:\/\/\.mihcollection\.com\/$1" [R=302,L]
+
